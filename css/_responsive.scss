@@ -1,0 +1,39 @@
+/* responsive mobile -more-than: Mobile: 610px */
+@media only screen and (min-width:610px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .top{
+           position: relative;
+            grid-column: 1/2;
+            padding: 25px;
+            margin-right: 5.625rem;
+            text-align: left;
+            h1{
+                position: absolute;
+                margin-top: 9.375rem;
+                font-size: 3.5em;
+                line-height: 3.75rem;
+            }
+            p{
+                position: absolute;
+                margin-top: 300px;
+                font-size: 1.1em;
+            }
+        }
+        .price{
+            grid-column: 2/-1;
+            grid-row: 1;
+        }
+        .form{
+            grid-column: 2/-1;
+            height: 34.9375rem;
+            padding: 45px;
+            gap: 3px;
+            span{
+                right: -370px;
+            }
+        }
+    }
+
+}
